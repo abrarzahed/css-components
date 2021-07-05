@@ -307,7 +307,6 @@ P {
   opacity: 0.5;
 }
 
-
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -320,19 +319,18 @@ P {
 /* ! Bouncer ball loader ends here */
 
 /* * Spinner starts here */
-.spin-container{
+.spin-container {
   width: 300px;
   margin: 60px auto;
   display: grid;
   place-items: center;
-  gap: 40px
+  gap: 40px;
 }
 .spinner {
   width: 260px;
   height: 260px;
   position: relative;
-  /* overflow: hidden; */
-
+  overflow: hidden;
 }
 .spinner div {
   width: 100%;
