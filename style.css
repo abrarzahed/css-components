@@ -377,3 +377,61 @@ P {
 }
 
 /* * Spinner ends here */
+
+/* * advance spinner starts here  */
+.loading-screen {
+  max-width: 750px;
+  margin: 20px auto;
+  padding: 39px;
+  display: grid;
+  place-content: center;
+}
+.loading {
+  display: flex;
+  flex-wrap: wrap;
+  width: 220px;
+  gap: 10px;
+  animation: rotate 3s linear infinite;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading span {
+  height: 100px;
+  width: 100px;
+  animation: scale 1.5s linear infinite;
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.loading span:nth-child(1) {
+  border-radius: 50% 50% 0 50%;
+  background: #fff20090;
+  transform-origin: bottom right;
+}
+.loading span:nth-child(2) {
+  border-radius: 50% 50% 50% 0;
+  background: #32ff7d98;
+  transform-origin: bottom left;
+  animation-delay: 0.5s;
+}
+.loading span:nth-child(3) {
+  border-radius: 50% 0 50% 50%;
+  background: #17c1eba8;
+  transform-origin: top right;
+  animation-delay: 2s;
+}
+.loading span:nth-child(4) {
+  border-radius: 0 50% 50% 50%;
+  background: #ff3838c0;
+  transform-origin: top left;
+  animation-delay: 1s;
+}
+
+/* * advance spinner ends here  */
