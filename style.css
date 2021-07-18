@@ -569,12 +569,12 @@ P {
   /* padding: 30px; */
 }
 .cards-3d-container {
-  width: 240px;
-  max-width: 240px;
-  height: 300px;
-  max-height: 300px;
+  width: 220px;
+  max-width: 220px;
+  height: 2800px;
+  max-height: 280px;
   background: rgba(0, 0, 0, 0.192);
-  transform: rotate(-30deg) skew(25deg) scale(0.8);
+  transform: rotate(-30deg) skew(15deg) scale(0.8);
   transition: 0.5s;
   display: grid;
   place-items: center;
